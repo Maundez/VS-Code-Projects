@@ -1,7 +1,7 @@
 # ask user for their name
 def main():
-    name = input("What's your name? ").title().strip()
-    hello(name)
+    name = input("What's your name? ")
+    hello()
     
     
 
