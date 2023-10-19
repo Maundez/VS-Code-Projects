@@ -1,0 +1,32 @@
+Regular expressions (often abbreviated as regex or regexp) are a powerful tool for working with text. 
+They are sequences of characters that define a search pattern, which can then be used to match, locate, or replace parts of text. 
+Regular expressions are widely used in programming for tasks like data validation, scraping, parsing, and more.
+
+Basic Components of Regular Expressions
+Literals: The most basic type of regular expression, it matches the exact text.
+
+Example: apple will match "apple" in "I have an apple."
+Character Classes: Enclosed in square brackets [], these match any one of the enclosed characters.
+
+Example: [aeiou] will match any vowel in "Hello."
+Quantifiers: These specify how many instances of the preceding element to match.
+
+* : 0 or more
++ : 1 or more
+? : 0 or 1
+{n} : exactly n
+{n,} : n or more
+{n,m} : between n and m
+Anchors: These specify the position of the match.
+
+^ : start of string
+$ : end of string
+Special Characters: Some characters have special meanings, like ., *, +, ?, |, (), [], {}, and ^. To use them literally, you have to escape them with a backslash \.
+
+Groups and Capturing: Enclosed in parentheses (), groups allow you to apply quantifiers to multiple elements, or capture parts of the matched text.
+
+Alternation: The | symbol allows you to match either the preceding or following pattern.
+
+Escape Sequences: Special sequences that start with a backslash \ and represent predefined sets of characters. 
+For example, \d matches any digit, \w matches any alphanumeric character, and \s matches any whitespace.
+
