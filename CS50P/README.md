@@ -22,6 +22,7 @@ A collection of Python scripts based on lessons and problems in CS50P
 
 ## 4. Libraries
 - `emojize.py` : imports an emoji library and outputs emoji based on inputted str.
+- `figlet.py` : library import and error handling, command line arguments (argv), exception handling
 
 ## 5. Unit Tests
 

@@ -12,13 +12,16 @@ elif num_args == 3 and (sys.argv[1] == '-f' or sys.argv[1] == '--font'):
     font_name = sys.argv[2]
     try:
         font = Figlet(font=font_name)
-    except Exception as e:
-        print(f"Invalid usage")
+    except Exception as e: # This line starts an exception handling block.
+        print(f"Error: {e}") # If an exception occurs, this line prints an error message to the console. The {e} inside the f-string represents the exception object itself. 
+        # print(f"Invalid usage") # This line waas used to comply with CS50 problem error message requirements
+        print("Usage: python figlet.py [-f FONT_NAME]")     # another error message type as an example
         sys.exit(1)
     
     
 else:
     # Invalid number or format of arguments, exit with error message
+    
     print(f"Invalid usage")
     sys.exit(1)  # Exit with a non-zero status code to indicate error
 
