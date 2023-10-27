@@ -1,7 +1,7 @@
 def get_calories(fruit):
-
+    
+    # Define a dictionary containing the calorie counts for various fruits
     fruit_calories_dict = {
-        'Meat': 250,
         'Lemon': 15,
         'Lime': 20,
         'Avocado': 50,
@@ -24,6 +24,8 @@ def get_calories(fruit):
         'Apple': 130,
     }
 
+    # Get the calorie count for the given fruit from the dictionary. 
+    # If the fruit isn't found, it defaults to None.
     fruit_calories = fruit_calories_dict.get(fruit, None)
     if fruit_calories is not None:
         print(f"Output: {fruit_calories}")
