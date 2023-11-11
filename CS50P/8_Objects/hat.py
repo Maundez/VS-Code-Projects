@@ -8,13 +8,13 @@ import random
 
 # Define a class called Hat
 class Hat:
-    # Define a class attribute called houses containing the names of the four houses
+    """Define a class attribute called houses containing the names of the four houses"""
     houses = ["Gryffindor", "Hufflepuff", "Ravenclaw", "Slytherin"]
     
     # Define a class method called sort_hat
     @classmethod  # The @classmethod decorator indicates that this is a class method
     def sort_hat(cls, name):  # cls refers to the class itself; name is the student's name
-        # Print the name and randomly assign one of the four houses
+        """Print the name and randomly assign one of the four houses"""
         print(name, "is in", random.choice(cls.houses))  # random.choice picks a random element from the list
         
 # Create an instance of the Hat class
