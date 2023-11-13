@@ -1,3 +1,5 @@
+import sys
+
 while True: # The while True statement means that the loop will keep running forever, unless it is explicitly told to stop.
     try:    # The try statement attempts to convert the user's input to an integer using the int() function.
         x = int(input("What is x? "))   # If the conversion is successful, the else block is executed and the loop breaks.
@@ -18,3 +20,11 @@ while True:
         break  
     except KeyboardInterrupt: # If CRTL-C is pressed in Windows environment this exception is called
         break
+    except FileNotFoundError:
+        sys.exit("File not found")
+    except PermissionError:
+        sys.exit("Permission denied: Unable to access the file")
+    except csv.Error as e:
+        sys.exit(f"CSV error: {e}")
+    except UnicodeDecodeError:
+        sys.exit("File decoding error: Check the file encoding")
