@@ -66,6 +66,8 @@ The line `with open(sys.argv[1], 'r') as file:` opens `open` the file name in th
 
 
 ## 7. Regular Expressions
+- `numb3rs.py`: Pattern matching
+- `watch.py`: Converts a URL to a short URL
 
 ## 8. Object Oriented Programming
 
