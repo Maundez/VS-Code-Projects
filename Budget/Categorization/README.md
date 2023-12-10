@@ -26,10 +26,12 @@ This is an xls file containing data from
 - Select the Credit Card
 - Select `Transactions`
 - Select `Download` and specify a `Duration` and download
+- Save to: C:\Users\smaun\OneDrive\Documents\Data Analysis\Budget\RAW Exports\ANZ
 3. **CBA Data**
 - Select the `Offset-1 Personal`
 - Select a range for transactions via the `Date` dropdown
 - Select `Export` (it is located just above the word `balance` above the first entry)
+- Save to: C:\Users\smaun\OneDrive\Documents\Data Analysis\Budget\RAW Exports\CBA
 
 ## TRANSFORMING DATA ##
 - As there is no error handling, the source file must be in the follwoing format
@@ -44,11 +46,18 @@ This is an xls file containing data from
 - ANZ data does not require transforming but add Column D for the account identifier `ANZ`
 
 3. **Transform CBA Data**
-- ANZ data does not require transforming but add replace Column D with the account identifier `CBA`
+- Delete Column D in the CBA file (Total) and replace with the account identifier `CBA`
 
 4. **Add all data to existing**
-- Copy and paste all data from the cleaned individual spreadsheets into a copy of the last main source file
+- File location:  
+- Make a copy of the previous deduped xlsx and save as `Source update YYY-MM-DD.CSV`
+- Copy and paste all data from the cleaned individual spreadsheets into a copy of the most recent deduped file
 - Run `dedupe.py` from the `Data Cleaning` folder on this file. Check row counts before and after this just to check.
+- File location:  C:\Users\smaun\OneDrive\Documents\Data Analysis\Budget\Source
+- Save the duduped CSV file as an excel file `Source update YYY-MM-DD.XLSX`
+- Rename the tab to `Sheet1`
+
+
 
 3. **File Location**
 The location of the data files is:  C:\Users\smaun\OneDrive\Documents\Data Analysis\Budget\Source
