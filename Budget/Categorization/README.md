@@ -49,7 +49,7 @@ This is an xls file containing data from
 - Delete Column D in the CBA file (Total) and replace with the account identifier `CBA`
 
 4. **Add all data to existing**
-- File location:  
+- File location:  C:\Users\smaun\OneDrive\Documents\Data Analysis\Budget\Source
 - Make a copy of the previous deduped xlsx and save as `Source update YYY-MM-DD.CSV`
 - Copy and paste all data from the cleaned individual spreadsheets into a copy of the most recent deduped file
 - Run `dedupe.py` from the `Data Cleaning` folder on this file. Check row counts before and after this just to check.
@@ -73,7 +73,7 @@ Output locations:                   C:\Users\smaun\OneDrive\Documents\Data Analy
 
 
 
-Proceedure:
+##Proceedure:##
 Run the python file "categories_5.py"
 Select the two files:
     1. Data Source
